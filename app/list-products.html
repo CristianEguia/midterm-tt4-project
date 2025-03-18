@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List of Products</title>
+    <title>Product List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="list-products.css">
 </head>
 
 <body>
-
     <div class="d-flex" id="wrapper">
-        <!-- Sidebar-->
+        <!-- Sidebar -->
         <div class="border-end bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+            <div class="sidebar-heading border-bottom bg-light">Midterm TT4</div>
             <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="list-products.html">List</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="list-products.html">Products</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="add-products.html">Add Product</a>
             </div>
         </div>
-        <!-- Page content wrapper-->
+
+        <!-- Page Content -->
         <div id="page-content-wrapper">
-            <!-- Top navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <div class="container-fluid">
                     <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
@@ -34,102 +36,29 @@
                             <li class="nav-item"><a class="nav-link" href="#!">Messages</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Your Name</a>
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#!">Action</a>
                                     <a class="dropdown-item" href="#!">Another action</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#!">Something else here</a>
+                                    <a class="dropdown-item" href="#!">Logout</a>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <!-- Page content-->
-            <div id="content" class="container-fluid p-5">
 
-                <h2>Product list example</h2>
-                <div id="products" class="d-flex gap-2">
-                    <!-- Products -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="assets/images/apple.jpg" class="card-img-top" alt="Product 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Apple equipment</h5>
-                                <p class="card-text">All products</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">$999.99</span>
-                                    <div>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                        <small class="text-muted">(4.5)</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between bg-light">
-                                <button class="btn btn-primary btn-sm">Add to Cart</button>
-                                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="assets/images/camara1.jpg" class="card-img-top" alt="Product 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Camera Pro</h5>
-                                <p class="card-text">Very good camera.</p>
-                                <span class="h5 mb-0">$89.99</span>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between bg-light">
-                                <button class="btn btn-primary btn-sm">Add to Cart</button>
-                                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="assets/images/camara2.jpg" class="card-img-top" alt="Product 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Camera with lens</h5>
-                                <p class="card-text">The best</p>
-                                <span class="h5 mb-0">$179.99</span>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between bg-light">
-                                <button class="btn btn-primary btn-sm">Add to Cart</button>
-                                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="assets/images/drone1.jpg" class="card-img-top" alt="Product 3">
-                            <div class="card-body">
-                                <h5 class="card-title">DJI drone</h5>
-                                <p class="card-text">With camera</p>
-                                <span class="h5 mb-0">$479.99</span>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between bg-light">
-                                <button class="btn btn-primary btn-sm">Add to Cart</button>
-                                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="container mt-4">
+                <h1 class="text-center">Product List</h1>
+                <div id="products" class="row">
+                    <!-- Products will be dynamically inserted here -->
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="list-products.js"></script>
 </body>
 
 </html>
